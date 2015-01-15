@@ -1,0 +1,50 @@
+{
+  "tz": "Asia/Singapore",
+  "rvm":{
+    "installs":{
+      "devuser": true
+    },
+    "user_installs":[
+      {
+        "install_rubies": true,
+        "user": "devuser",
+        "default_ruby":"2.2.0",
+        "rubies":["2.2.0", "2.1.5"],
+        "global_gems":[
+          { "name":"rubocop" },
+          { "name":"foodcritic" },
+          { "name":"pry" },
+          { "name":"pry-doc" }
+        ],
+        "gems":{
+          "ruby-2.2.0@chef":[
+            { "name":"chef" },
+            { "name":"knife-solo" },
+            { "name":"berkshelf" }
+          ]
+        }
+      }
+    ]
+  },
+  "docker":{
+    "group_members":["devuser"]
+  },
+  "devenv":{
+    "user":{
+      "name": "devuser",
+      "shell": "/usr/bin/zsh",
+      "password": "$1$M9i4o61H$5EQCrD0fGL8uUaJjBguvg1",
+      "ssh_key_file": "/vagrant/keys/.ssh/id_rsa"
+    },
+    "git":{
+      "user_name":"devuser",
+      "user_email":"devuser@example.com"
+    },
+    "nvm":{
+      "ref":"v0.18.0"
+    }
+  },
+  "run_list":[
+    "recipe[devenv]"
+  ]
+}
