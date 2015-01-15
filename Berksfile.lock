@@ -1,7 +1,7 @@
 DEPENDENCIES
   devenv
     git: https://github.com/byplayer/cookbook-devenv.git
-    revision: 125e9da3822c865ca28f97255393f4a833809ca9
+    revision: 93af046b76c723c805766a405847f52aef91c55f
   global
     git: https://github.com/byplayer/chef-global.git
     revision: 44d8b05fabfa28d38858540b14518ceb4f714ad4
@@ -65,7 +65,8 @@ GRAPH
   global (0.1.1)
   golang (1.5.0)
   heroku-toolbelt (0.1.0)
-  homebrew (1.10.0)
+  homebrew (1.11.0)
+    build-essential (>= 2.1.2)
   iptables (0.14.1)
   iptables-ng (2.2.5)
   java (1.29.0)
