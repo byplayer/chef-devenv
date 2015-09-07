@@ -1,7 +1,7 @@
 DEPENDENCIES
   devenv
     git: https://github.com/byplayer/cookbook-devenv.git
-    revision: c2797fe0524bcafab16950ce2e325fcd9192da07
+    revision: 4a2caa216cfa81effb9af4a04bcb83de00d0ba1b
   global
     git: https://github.com/byplayer/chef-global.git
     revision: 44d8b05fabfa28d38858540b14518ceb4f714ad4
