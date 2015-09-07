@@ -1,7 +1,7 @@
 DEPENDENCIES
   devenv
     git: https://github.com/byplayer/cookbook-devenv.git
-    revision: 3681a563493336d6d6e31875b4c582b9a7603d25
+    revision: c2797fe0524bcafab16950ce2e325fcd9192da07
   global
     git: https://github.com/byplayer/chef-global.git
     revision: 44d8b05fabfa28d38858540b14518ceb4f714ad4
@@ -34,7 +34,7 @@ GRAPH
     timezone (>= 0.0.0)
     tmux (>= 0.0.0)
     updatedb (>= 0.0.0)
-  docker (1.0.16)
+  docker (1.0.21)
   global (0.1.1)
   heroku-toolbelt (0.1.0)
   java (1.35.0)
@@ -65,6 +65,6 @@ GRAPH
   timezone (0.0.1)
   tmux (1.5.0)
   updatedb (0.1.1)
-  yum (3.6.3)
+  yum (3.7.0)
   yum-epel (0.6.2)
     yum (~> 3.2)
