@@ -9,7 +9,7 @@
         "install_rubies": true,
         "user": "devuser",
         "default_ruby":"2.2.0",
-        "rubies":["2.2.0", "2.1.5"],
+        "rubies":["2.2.0", "2.1.5", "1.9.3"],
         "global_gems":[
           { "name":"rubocop" },
           { "name":"foodcritic" },
