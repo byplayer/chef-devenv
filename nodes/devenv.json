@@ -1,30 +1,22 @@
 {
   "tz": "Asia/Singapore",
   "rvm":{
-    "installs":{
-      "devuser": true
-    },
-    "user_installs":[
-      {
-        "install_rubies": true,
-        "user": "devuser",
-        "default_ruby":"2.2.0",
-        "rubies":["2.2.0", "2.1.5", "1.9.3"],
-        "global_gems":[
-          { "name":"rubocop" },
-          { "name":"foodcritic" },
-          { "name":"pry" },
-          { "name":"pry-doc" }
-        ],
-        "gems":{
-          "ruby-2.2.0@chef":[
-            { "name":"chef" },
-            { "name":"knife-solo" },
-            { "name":"berkshelf" }
-          ]
+    "users": {
+      "devuser": {
+        "rubies": {
+          "2.2.0": "uninstall",
+          "2.2.1": "install",
+          "2.1.5": {
+            "action": "install",
+            "default": true
+          },
+          "1.9.3": "install"
+        },
+        "gems": {
+          "2.1.5@global": ["rubocop", "foodcritic", "pry", "pry-doc"]
         }
       }
-    ]
+    }
   },
   "docker":{
     "group_members":["devuser"]

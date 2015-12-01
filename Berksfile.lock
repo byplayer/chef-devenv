@@ -1,22 +1,24 @@
 DEPENDENCIES
+  bsw_gpg
+    git: https://github.com/byplayer/cookbook-gpg.git
+    revision: dfd499b059bc4b9c860cc31c78afbb7fde921997
   devenv
     git: https://github.com/byplayer/cookbook-devenv.git
-    revision: 4a2caa216cfa81effb9af4a04bcb83de00d0ba1b
+    revision: a0af4071d5c3a9aa9240bf0555beb8aae68083c1
   global
     git: https://github.com/byplayer/chef-global.git
     revision: 44d8b05fabfa28d38858540b14518ceb4f714ad4
     branch:  feature/version_up
-  rvm
-    git: https://github.com/byplayer/chef-rvm.git
-    revision: 8bb902201ac3d6dc9332d150b4d620d52c1c838d
-    branch: support_12
+  ruby_rvm
+    git: https://github.com/byplayer/chef-ruby_rvm.git
+    revision: adf3eefdd0b5290260bd86349ccc676ccca6db61
   the_silver_searcher
     git: https://github.com/byplayer/the_silver_searcher-cookbook.git
     revision: 692d6ba5110c1b7162fb59928e49ab3f30365c24
     branch: feature/build_opt
 
 GRAPH
-  apt (2.8.2)
+  apt (2.8.1)
   apt-repo (0.1.2)
   bsw_gpg (0.2.3)
   build-essential (2.2.3)
@@ -34,7 +36,7 @@ GRAPH
     timezone (>= 0.0.0)
     tmux (>= 0.0.0)
     updatedb (>= 0.0.0)
-  docker (1.0.21)
+  docker (1.0.6)
   global (0.1.1)
   heroku-toolbelt (0.1.0)
   java (1.35.0)
@@ -55,16 +57,13 @@ GRAPH
     sudo (>= 0.0.0)
   runit (1.7.2)
     packagecloud (>= 0.0.0)
-  rvm (0.10.1)
-    chef_gem (>= 0.0.0)
-    java (>= 0.0.0)
   sudo (2.7.2)
   the_silver_searcher (1.3.9)
     build-essential (>= 0.0.0)
     chef-sugar (>= 0.0.0)
   timezone (0.0.1)
-  tmux (1.5.0)
+  tmux (1.4.0)
   updatedb (0.1.1)
-  yum (3.7.0)
+  yum (3.6.3)
   yum-epel (0.6.2)
     yum (~> 3.2)
