@@ -25,7 +25,7 @@
     "user":{
       "name": "devuser",
       "shell": "/usr/bin/zsh",
-      "password": "$1$M9i4o61H$5EQCrD0fGL8uUaJjBguvg1",
+      "password": "$1$my1hU2/q$ru6pMaUBRIfak0czbbF.f.",
       "ssh_key_file": "/vagrant/keys/.ssh/id_rsa"
     },
     "git":{
