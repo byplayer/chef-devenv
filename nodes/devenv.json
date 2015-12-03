@@ -25,9 +25,8 @@
     "user":{
       "name": "devuser",
       "shell": "/usr/bin/zsh",
-      "password": "$1$my1hU2/q$ru6pMaUBRIfak0czbbF.f.",
-      "ssh_key_file": "/vagrant/keys/.ssh/id_rsa"
-    },
+      "password": "$1$my1hU2/q$ru6pMaUBRIfak0czbbF.f."
+     },
     "git":{
       "user_name":"devuser",
       "user_email":"devuser@example.com"
