@@ -1,10 +1,10 @@
 DEPENDENCIES
   bsw_gpg
     git: https://github.com/byplayer/cookbook-gpg.git
-    revision: dfd499b059bc4b9c860cc31c78afbb7fde921997
+    revision: 968bf864264d0d5819d4a240b022c1a77f2fa78f
   devenv
     git: https://github.com/byplayer/cookbook-devenv.git
-    revision: a0af4071d5c3a9aa9240bf0555beb8aae68083c1
+    revision: 4a2caa216cfa81effb9af4a04bcb83de00d0ba1b
   global
     git: https://github.com/byplayer/chef-global.git
     revision: 44d8b05fabfa28d38858540b14518ceb4f714ad4
@@ -18,12 +18,13 @@ DEPENDENCIES
     branch: feature/build_opt
 
 GRAPH
-  apt (2.8.1)
+  apt (2.9.2)
   apt-repo (0.1.2)
   bsw_gpg (0.2.3)
-  build-essential (2.2.3)
-  chef-sugar (3.1.1)
+  build-essential (2.2.4)
+  chef-sugar (3.2.0)
   chef_gem (0.1.0)
+  compat_resource (12.5.24)
   devenv (0.1.0)
     apt (>= 0.0.0)
     apt-repo (>= 0.0.0)
@@ -36,16 +37,18 @@ GRAPH
     timezone (>= 0.0.0)
     tmux (>= 0.0.0)
     updatedb (>= 0.0.0)
-  docker (1.0.6)
+  docker (2.3.15)
+    compat_resource (>= 12.5.23)
   global (0.1.1)
   heroku-toolbelt (0.1.0)
-  java (1.35.0)
+  java (1.36.0)
+    apt (>= 0.0.0)
   mongodb (0.16.2)
     apt (>= 1.8.2)
     python (>= 0.0.0)
     runit (>= 1.5.0)
     yum (>= 3.0)
-  packagecloud (0.0.19)
+  packagecloud (0.1.1)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
@@ -55,15 +58,15 @@ GRAPH
     chef_gem (>= 0.0.0)
     java (>= 0.0.0)
     sudo (>= 0.0.0)
-  runit (1.7.2)
+  runit (1.7.4)
     packagecloud (>= 0.0.0)
   sudo (2.7.2)
   the_silver_searcher (1.3.9)
     build-essential (>= 0.0.0)
     chef-sugar (>= 0.0.0)
   timezone (0.0.1)
-  tmux (1.4.0)
+  tmux (1.5.0)
   updatedb (0.1.1)
-  yum (3.6.3)
-  yum-epel (0.6.2)
+  yum (3.8.2)
+  yum-epel (0.6.5)
     yum (~> 3.2)
