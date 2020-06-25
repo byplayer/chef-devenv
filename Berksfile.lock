@@ -3,7 +3,7 @@ DEPENDENCIES
     git: https://github.com/byplayer/cookbook-gpg.git
     revision: ed66eb5d5bb22affb8daaa0f8ffd9f6beceb89d6
   devenv
-    git: https://github.com/byplayer/cookbook-devenv.git
+    git: https://github.com/byplayer/chef-cookbook-devenv.git
     revision: 8bc285ba9af90ae666ac177ca09308596ab1c62d
   global
     git: https://github.com/byplayer/chef-global.git
