@@ -1,72 +1,77 @@
 DEPENDENCIES
   bsw_gpg
     git: https://github.com/byplayer/cookbook-gpg.git
-    revision: 968bf864264d0d5819d4a240b022c1a77f2fa78f
+    revision: ed66eb5d5bb22affb8daaa0f8ffd9f6beceb89d6
   devenv
     git: https://github.com/byplayer/cookbook-devenv.git
-    revision: 4a2caa216cfa81effb9af4a04bcb83de00d0ba1b
+    revision: 8bc285ba9af90ae666ac177ca09308596ab1c62d
   global
     git: https://github.com/byplayer/chef-global.git
-    revision: 44d8b05fabfa28d38858540b14518ceb4f714ad4
-    branch:  feature/version_up
+    revision: 90d5b1efa2600314a039cd5f41ba88da61283910
+    branch: feature/config_option
   ruby_rvm
     git: https://github.com/byplayer/chef-ruby_rvm.git
     revision: adf3eefdd0b5290260bd86349ccc676ccca6db61
   the_silver_searcher
     git: https://github.com/byplayer/the_silver_searcher-cookbook.git
-    revision: 692d6ba5110c1b7162fb59928e49ab3f30365c24
+    revision: f2cdb1167dd2fcce8b800b55a8573d934bd3184a
     branch: feature/build_opt
 
 GRAPH
-  apt (2.9.2)
+  apt (7.3.0)
   apt-repo (0.1.2)
   bsw_gpg (0.2.3)
-  build-essential (2.2.4)
-  chef-sugar (3.2.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-sugar (5.1.8)
   chef_gem (0.1.0)
-  compat_resource (12.5.24)
   devenv (0.1.0)
     apt (>= 0.0.0)
     apt-repo (>= 0.0.0)
     docker (>= 0.0.0)
+    docker_compose (>= 0.0.0)
     global (>= 0.0.0)
+    golang (>= 0.0.0)
     heroku-toolbelt (>= 0.0.0)
-    mongodb (>= 0.0.0)
-    ruby_rvm (>= 0.0.0)
+    kubectl (>= 0.0.0)
+    pyenv (>= 0.0.0)
+    rbenv (>= 0.0.0)
     the_silver_searcher (>= 0.0.0)
-    timezone (>= 0.0.0)
     tmux (>= 0.0.0)
+    universal-ctags (>= 0.0.0)
     updatedb (>= 0.0.0)
-  docker (2.3.15)
-    compat_resource (>= 12.5.23)
-  global (0.1.1)
+    yarn (>= 0.0.0)
+  docker (6.0.3)
+  docker_compose (0.1.1)
+  git (10.0.0)
+  global (1.0.0)
+  golang (3.0.0)
   heroku-toolbelt (0.1.0)
-  java (1.36.0)
+  kubectl (0.1.2)
+  mingw (2.1.1)
+    seven_zip (>= 0.0.0)
+  ohai (5.3.0)
+  pyenv (3.2.0)
+  rbenv (1.7.1)
     apt (>= 0.0.0)
-  mongodb (0.16.2)
-    apt (>= 1.8.2)
-    python (>= 0.0.0)
-    runit (>= 1.5.0)
-    yum (>= 3.0)
-  packagecloud (0.1.1)
-  python (1.4.6)
     build-essential (>= 0.0.0)
-    yum-epel (>= 0.0.0)
+    git (>= 0.0.0)
+    ohai (>= 1.1)
   ruby_rvm (0.4.9)
     apt (>= 0.0.0)
     bsw_gpg (>= 0.0.0)
     chef_gem (>= 0.0.0)
-    java (>= 0.0.0)
     sudo (>= 0.0.0)
-  runit (1.7.4)
-    packagecloud (>= 0.0.0)
-  sudo (2.7.2)
+  seven_zip (3.1.2)
+    windows (>= 0.0.0)
+  sudo (5.4.6)
   the_silver_searcher (1.3.9)
     build-essential (>= 0.0.0)
     chef-sugar (>= 0.0.0)
-  timezone (0.0.1)
   tmux (1.5.0)
+  universal-ctags (0.2.5)
   updatedb (0.1.1)
-  yum (3.8.2)
-  yum-epel (0.6.5)
-    yum (~> 3.2)
+  windows (7.0.0)
+  yarn (0.4.2)
+    apt (>= 0.0.0)
